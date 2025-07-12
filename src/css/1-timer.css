@@ -8,7 +8,15 @@
   flex-direction: column;
   margin-right: 20px;
 }
+.button,
+input,
 .value {
   font-weight: 500;
+}
+.value {
   font-size: 35px;
+}
+.button,
+input {
+  font-size: 18px;
 }
