@@ -16,6 +16,10 @@ form {
 .delay-input {
   width: 97%;
 }
+.delay-input:focus {
+  border: 2px solid #3f51b5;
+  outline: none;
+}
 .submit {
   font-weight: 500;
   font-size: 35px;
