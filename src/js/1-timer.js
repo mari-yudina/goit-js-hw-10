@@ -25,9 +25,6 @@ flatpickr(input, {
   onClose(selectedDates) {
     validateDate(selectedDates[0]);
   },
-  onChange(selectedDates) {
-    validateDate(selectedDates[0]);
-  },
 });
 
 function validateDate(date) {
@@ -67,7 +64,7 @@ startBtn.addEventListener('click', () => {
 });
 
 function updateTimer({ days, hours, minutes, seconds }) {
-  refs.days.textContent = String(days);
+  refs.days.textContent = addLeadingZero(days);
   refs.hours.textContent = addLeadingZero(hours);
   refs.minutes.textContent = addLeadingZero(minutes);
   refs.seconds.textContent = addLeadingZero(seconds);
